@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Event Organizer Dashboard</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">Event Organizer</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Create Event</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <svg class="icon open-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M3 12h18M3 6h18M3 18h18"></path>
+                    </svg>
+                    <svg class="icon close-icon hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M18 6L6 18M6 6l12 12"></path>
+                    </svg>
+                </div>     
+            </nav>
+        </header>
+
+        <main>
+            <section class="create-event">
+                <h2>Create Event</h2>
+                <form id="event-form">
+                    <label for="event-name">Event Name:</label>
+                    <input type="text" id="event-name" name="event-name" required>
+                    
+                    <label for="event-date">Event Date:</label>
+                    <input type="date" id="event-date" name="event-date" required>
+                    
+                    <label for="event-time">Event Time:</label>
+                    <input type="time" id="event-time" name="event-time" required>
+                    
+                    <label for="event-location">Event Location:</label>
+                    <input type="text" id="event-location" name="event-location" required>
+                    
+                    <label for="event-participants">Participants:</label>
+                    <input type="number" id="event-participants" name="event-participants" min="1" required>
+                    
+                    <button type="submit">Create Event</button>
+                </form>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
